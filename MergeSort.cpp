@@ -21,10 +21,10 @@ private:
 		int i = lo, j = mid+1;
 		for (int k = lo; k <= hi; k++)
 		{
-			if (i > mid) 				aux[k] = a[j++];
-			else if (j > hi) 			aux[k] = a[i++];
+			if (i > mid)    		aux[k] = a[j++];
+			else if (j > hi)		aux[k] = a[i++];
 			else if (less(a[j], a[i])) 	aux[k] = a[j++];
-			else 						aux[k] = a[i++];
+			else 				aux[k] = a[i++];
 		}
 	}
 	static void sort(int a[], int aux[], int lo, int hi)
